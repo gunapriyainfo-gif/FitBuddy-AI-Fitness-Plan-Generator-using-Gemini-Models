@@ -1,0 +1,6 @@
+{
+  "name": "FitBuddy - AI Workout & Nutrition Planner",
+  "description": "Personalized 7-day workout plans, goal-specific nutrition tips, and interactive plan revision powered by Google Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

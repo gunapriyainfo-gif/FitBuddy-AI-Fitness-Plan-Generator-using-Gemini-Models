@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Marcus Vance",
+      "age": 28,
+      "weight": 82.3,
+      "goal": "muscle gain",
+      "intensity": "high",
+      "schedule": 7,
+      "createdAt": "2026-09-29T07:06:06.242Z"
+    },
+    {
+      "id": 102,
+      "name": "Elena Rostova",
+      "age": 31,
+      "weight": 64,
+      "goal": "weight loss",
+      "intensity": "medium",
+      "schedule": 7,
+      "createdAt": "2026-09-30T07:06:06.242Z"
+    }
+  ],
+  "workoutPlans": [
+    {
+      "id": 1,
+      "userId": 101,
+      "originalPlan": "Day 1: Upper Body Power (Chest & Back)\nWarm-up: 8 mins dynamic arm circles, band pull-aparts, thoracic mobility\nMain Workout:\n- Barbell Bench Press: 4 sets x 6 reps (Heavy)\n- Weighted Pull-Ups / Lat Pulldowns: 4 sets x 8 reps\n- Incline Dumbbell Press: 3 sets x 10 reps\n- Bent-Over Barbell Rows: 4 sets x 8 reps\n- Cable Face Pulls: 3 sets x 15 reps\nCooldown: 7 mins chest doorway stretch, lat hang, deep breathing\n\nDay 2: Lower Body Strength (Quads & Hamstrings)\nWarm-up: 10 mins bodyweight squats, hip 90/90 openers, leg swings\nMain Workout:\n- Barbell Back Squat: 4 sets x 6 reps\n- Romanian Deadlifts (RDL): 3 sets x 8 reps\n- Bulgarian Split Squats: 3 sets x 10 reps per leg\n- Standing Calf Raises: 4 sets x 12 reps\n- Hanging Leg Raises: 3 sets x 12 reps\nCooldown: 6 mins seated forward fold, couch stretch for hip flexors\n\nDay 3: Active Recovery & Core\nWarm-up: 5 mins gentle flow\nMain Workout:\n- 30 mins brisk incline outdoor walk or stationary cycle\n- Bird-Dogs: 3 sets x 10 reps per side\n- Plank Variations: 3 sets x 45 secs\n- Deadbugs: 3 sets x 12 reps\nCooldown: 8 mins full body foam rolling & hydration\n\nDay 4: Shoulders & Arms Hypertrophy\nWarm-up: 6 mins light dumbbell halo & rotator cuff warm-up\nMain Workout:\n- Overhead Barbell Military Press: 4 sets x 8 reps\n- Dumbbell Lateral Raises: 4 sets x 12-15 reps (controlled tempo)\n- Incline Dumbbell Bicep Curls: 3 sets x 10 reps\n- Tricep Rope Cable Pushdowns: 3 sets x 12 reps\n- Reverse Pec Deck Flyes: 3 sets x 15 reps\nCooldown: 6 mins overhead tricep stretch, cross-body shoulder stretch\n\nDay 5: Posterior Chain & Heavy Pull\nWarm-up: 8 mins glute bridges, cat-cow mobility, world's greatest stretch\nMain Workout:\n- Conventional Deadlift: 4 sets x 5 reps\n- Dumbbell Single-Arm Rows: 3 sets x 10 reps per arm\n- Hamstring Leg Curls: 3 sets x 12 reps\n- Hammer Curls: 3 sets x 10 reps\nCooldown: 7 mins pigeon pose stretch, lower back gentle decompression\n\nDay 6: Functional Full Body & Conditioning\nWarm-up: 7 mins jumping jacks, inchworms, high knees\nMain Workout:\n- Kettlebell Swings: 4 sets x 15 reps\n- Dumbbell Push Press: 3 sets x 8 reps\n- Goblet Squats: 3 sets x 12 reps\n- Dips (Chest/Tricep): 3 sets x 10-12 reps\n- Ab Wheel Rollouts: 3 sets x 10 reps\nCooldown: 6 mins child's pose, butterfly groin stretch\n\nDay 7: Full Rest & Regeneration\nWarm-up: None (Rest day)\nMain Workout:\n- Complete nervous system recovery\n- 20 mins casual walk in nature or light mobility\nCooldown: 10 mins contrast shower or sauna relaxation",
+      "updatedPlan": "Day 1: Upper Body Power (Chest & Back)\nWarm-up: 8 mins dynamic arm circles, band pull-aparts, thoracic mobility\nMain Workout:\n- Barbell Bench Press: 4 sets x 6 reps (Heavy)\n- Weighted Pull-Ups / Lat Pulldowns: 4 sets x 8 reps\n- Incline Dumbbell Press: 3 sets x 10 reps\n- Bent-Over Barbell Rows: 4 sets x 8 reps\n- Cable Face Pulls: 3 sets x 15 reps\nCooldown: 7 mins chest doorway stretch, lat hang, deep breathing\n\nDay 2: Lower Body Strength (Quads & Hamstrings)\nWarm-up: 10 mins bodyweight squats, hip 90/90 openers, leg swings\nMain Workout:\n- Barbell Back Squat: 4 sets x 6 reps\n- Romanian Deadlifts (RDL): 3 sets x 8 reps\n- Bulgarian Split Squats: 3 sets x 10 reps per leg\n- Standing Calf Raises: 4 sets x 12 reps\n- Hanging Leg Raises: 3 sets x 12 reps\nCooldown: 6 mins seated forward fold, couch stretch for hip flexors\n\nDay 3: Vinyasa Flow & Core Flexibility (Updated with Yoga)\nWarm-up: 6 mins mindful pranayama breathing, sun salutation A\nMain Workout:\n- 35 mins dynamic Vinyasa Yoga sequence (Warrior poses, triangle, balancing half-moon)\n- Downward Dog to Plank flow: 3 sets x 8 reps\n- Boat Pose (Navasana) holds: 3 sets x 30 seconds\n- Gentle pigeon pose and spinal twists\nCooldown: 10 mins deep restorative Savasana and joint release\n\nDay 4: Shoulders & Arms Hypertrophy\nWarm-up: 6 mins light dumbbell halo & rotator cuff warm-up\nMain Workout:\n- Overhead Barbell Military Press: 4 sets x 8 reps\n- Dumbbell Lateral Raises: 4 sets x 12-15 reps (controlled tempo)\n- Incline Dumbbell Bicep Curls: 3 sets x 10 reps\n- Tricep Rope Cable Pushdowns: 3 sets x 12 reps\n- Reverse Pec Deck Flyes: 3 sets x 15 reps\nCooldown: 6 mins overhead tricep stretch, cross-body shoulder stretch\n\nDay 5: Posterior Chain & Heavy Pull\nWarm-up: 8 mins glute bridges, cat-cow mobility, world's greatest stretch\nMain Workout:\n- Conventional Deadlift: 4 sets x 5 reps\n- Dumbbell Single-Arm Rows: 3 sets x 10 reps per arm\n- Hamstring Leg Curls: 3 sets x 12 reps\n- Hammer Curls: 3 sets x 10 reps\nCooldown: 7 mins pigeon pose stretch, lower back gentle decompression\n\nDay 6: Functional Full Body & Conditioning\nWarm-up: 7 mins jumping jacks, inchworms, high knees\nMain Workout:\n- Kettlebell Swings: 4 sets x 15 reps\n- Dumbbell Push Press: 3 sets x 8 reps\n- Goblet Squats: 3 sets x 12 reps\n- Dips (Chest/Tricep): 3 sets x 10-12 reps\n- Ab Wheel Rollouts: 3 sets x 10 reps\nCooldown: 6 mins child's pose, butterfly groin stretch\n\nDay 7: Full Rest & Regeneration\nWarm-up: None (Rest day)\nMain Workout:\n- Complete nervous system recovery\n- 20 mins casual walk in nature or light mobility\nCooldown: 10 mins contrast shower or sauna relaxation\n[UPDATED PLAN PER ATHLETE FEEDBACK: \"Add yoga on Day 3 for active recovery\"]\n",
+      "feedback": "Add yoga on Day 3 for active recovery",
+      "nutritionTip": "Aim for 1.8 to 2.2 grams of protein per kilogram of bodyweight, distributed across 4 balanced meals. Pair your post-workout protein with fast-digesting carbohydrates (like a banana, rice cakes, or honey) to replenish muscle glycogen and maximize muscle protein synthesis.",
+      "createdAt": "2026-09-29T07:06:06.242Z",
+      "updatedAt": "2026-10-01T07:06:24.814Z"
+    },
+    {
+      "id": 2,
+      "userId": 102,
+      "originalPlan": "Day 1: Full Body Metabolic Resistance\nWarm-up: 7 mins jogging in place, torso twists, bodyweight lunges\nMain Workout:\n- Dumbbell Thrusters: 3 sets x 12 reps\n- Dumbbell Romanian Deadlifts: 3 sets x 12 reps\n- Push-Ups (or Incline Push-Ups): 3 sets x 10-12 reps\n- Mountain Climbers: 3 sets x 30 secs\n- Plank Hold: 3 sets x 40 secs\nCooldown: 6 mins quad stretch, child's pose, slow nose breathing\n\nDay 2: Steady-State Aerobic Base & Core\nWarm-up: 5 mins light brisk walking\nMain Workout:\n- 35 mins Zone 2 Cardio (Brisk outdoor walking, elliptical, or cycle at conversational pace)\n- Bicycle Crunches: 3 sets x 15 reps per side\n- Glute Bridges: 3 sets x 15 reps\nCooldown: 5 mins hamstring stretches, lower back spinal twist\n\nDay 3: Lower Body & Glute Tone\nWarm-up: 8 mins air squats, clamshells, ankle circles\nMain Workout:\n- Goblet Squats: 3 sets x 12 reps\n- Walking Lunges: 3 sets x 10 reps per leg\n- Cable / Resistance Band Kickbacks: 3 sets x 15 reps\n- Step-Ups on Bench: 3 sets x 10 reps per leg\nCooldown: 6 mins standing figure-4 glute stretch, calf stretch\n\nDay 4: Active Rest & Recovery\nWarm-up: 5 mins gentle joint mobilization\nMain Workout:\n- 40 mins casual nature walk or leisurely swimming\nCooldown: 10 mins full-body restorative stretching\n\nDay 5: Upper Body Sculpt & HIIT Finish\nWarm-up: 6 mins arm swings, band pull-aparts, jumping jacks\nMain Workout:\n- Dumbbell Chest Press: 3 sets x 12 reps\n- Seated Cable Row: 3 sets x 12 reps\n- Dumbbell Shoulder Press: 3 sets x 10 reps\n- 10-Min HIIT Finisher: 30s jump rope / 30s rest x 10 rounds\nCooldown: 6 mins chest opener, neck rolls, deep exhales\n\nDay 6: Core, Stability & Low-Impact Cardio\nWarm-up: 6 mins side bends, hip circles, knee hugs\nMain Workout:\n- Kettlebell Deadlifts: 3 sets x 12 reps\n- Russian Twists: 3 sets x 16 reps total\n- Bird-Dog Holds: 3 sets x 10 reps\n- 25 mins incline treadmill walk\nCooldown: 6 mins cobra stretch, child's pose\n\nDay 7: Mindful Recovery & Prep\nWarm-up: None\nMain Workout: Rest and meal preparation for the upcoming week\nCooldown: Hydration focus and 8 hours of sleep",
+      "updatedPlan": null,
+      "feedback": null,
+      "nutritionTip": "To accelerate fat loss while preserving lean tone, prioritize a moderate caloric deficit with 1.6-2.0g of protein per kg of bodyweight, drink at least 2.5-3 liters of water daily, and eat fiber-rich vegetables before each meal to promote satiety.",
+      "createdAt": "2026-09-30T07:06:06.242Z",
+      "updatedAt": "2026-09-30T07:06:06.242Z"
+    }
+  ],
+  "workoutHistory": [
+    {
+      "userId": 101,
+      "dayNumber": 3,
+      "dayTitle": "Day 3",
+      "durationMinutes": 40,
+      "rpe": 7,
+      "difficultyRating": "just_right",
+      "notes": "Active recovery walk & core routine felt great",
+      "completedExercises": [],
+      "id": "hist-1790838814638-rcv4",
+      "completedAt": "2026-10-01T07:13:34.638Z"
+    }
+  ],
+  "progressLogs": [
+    {
+      "userId": 101,
+      "date": "2026-10-01",
+      "weight": 82.3,
+      "waistCm": 84,
+      "chestCm": 105.5,
+      "notes": "Progress weigh-in",
+      "id": "prog-1790838825412"
+    }
+  ],
+  "chatHistory": [
+    {
+      "id": "msg-1790838798297-135l",
+      "userId": 101,
+      "role": "user",
+      "content": "What can I do instead of squats?",
+      "timestamp": "2026-10-01T07:13:18.297Z"
+    },
+    {
+      "id": "msg-1790838802389-2slp",
+      "userId": 101,
+      "role": "assistant",
+      "content": "Here's my coaching recommendation for \"What can I do instead of squats?\":\n\nWhen optimizing your training for muscle gain, consistency and movement quality take top priority. If you need exercise substitutions, focus on preserving the fundamental movement pattern (push, pull, hinge, squat, or carry) with whatever equipment you have available.\n\nMake sure you are drinking enough water (2.9L/day) and taking 60-90 seconds of rest between working sets for recovery.\n\n*Note: Always listen to your body; if you feel sharp joint pain rather than muscular fatigue, rest and consult a healthcare professional.*",
+      "timestamp": "2026-10-01T07:13:22.389Z"
+    }
+  ]
+}

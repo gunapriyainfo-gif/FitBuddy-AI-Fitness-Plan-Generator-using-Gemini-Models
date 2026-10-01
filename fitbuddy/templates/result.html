@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy - Personalized Workout Plan</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(rgba(10, 15, 29, 0.90), rgba(10, 15, 29, 0.96)), 
+                        url('/static/images/gym-bg.jpg') no-repeat center center fixed;
+            background-size: cover; color: #f1f5f9; padding: 40px 20px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .container { width: 100%; max-width: 900px; }
+        .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .top-nav h1 {
+            font-size: 2.2rem; font-weight: 800;
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .btn-link {
+            color: #38bdf8; text-decoration: none; font-size: 0.9rem; padding: 8px 16px;
+            border-radius: 6px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25);
+        }
+        .user-badge {
+            background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px;
+            padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 25px;
+        }
+        .badge-item { display: flex; flex-direction: column; }
+        .badge-label { font-size: 0.75rem; text-transform: uppercase; color: #94a3b8; }
+        .badge-value { font-size: 1.05rem; font-weight: 700; color: #f8fafc; text-transform: capitalize; }
+        .plan-card {
+            background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 14px;
+            padding: 28px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .plan-header {
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 12px; margin-bottom: 18px;
+        }
+        .tag { font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; background: #0284c7; color: #fff; font-weight: 600; text-transform: uppercase; }
+        .tag.updated { background: #10b981; }
+        pre {
+            background: #0f172a; border: 1px solid #1e293b; border-radius: 10px; padding: 20px;
+            font-family: 'Consolas', 'Monaco', monospace; font-size: 0.95rem; line-height: 1.6;
+            color: #e2e8f0; white-space: pre-wrap; word-wrap: break-word; overflow-x: auto;
+        }
+        .nutrition-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.08) 100%);
+            border-left: 4px solid #10b981; border-radius: 8px; padding: 18px 22px; margin-top: 20px;
+        }
+        .nutrition-box h3 { font-size: 1.05rem; color: #34d399; margin-bottom: 8px; }
+        .feedback-card {
+            background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 26px; margin-bottom: 30px;
+        }
+        textarea {
+            width: 100%; height: 90px; padding: 12px 14px; background: #0f172a; border: 1px solid #334155;
+            border-radius: 8px; color: #f8fafc; font-size: 0.95rem; resize: vertical; margin-bottom: 14px;
+        }
+        .btn-update {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none;
+            padding: 12px 24px; border-radius: 8px; color: #fff; font-size: 1rem; font-weight: 700; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <h1>FitBuddy</h1>
+            <div>
+                <a href="/" class="btn-link">&larr; New Plan</a>
+                <a href="/view-all-users" class="btn-link">Admin Dashboard</a>
+            </div>
+        </div>
+
+        <div class="user-badge">
+            <div class="badge-item">
+                <span class="badge-label">User ID</span>
+                <span class="badge-value">#{{ user_id }}</span>
+            </div>
+            <div class="badge-item">
+                <span class="badge-label">Athlete</span>
+                <span class="badge-value">{{ username }}</span>
+            </div>
+            {% if age %}
+            <div class="badge-item">
+                <span class="badge-label">Age</span>
+                <span class="badge-value">{{ age }} yrs</span>
+            </div>
+            {% endif %}
+            {% if weight %}
+            <div class="badge-item">
+                <span class="badge-label">Weight</span>
+                <span class="badge-value">{{ weight }} kg</span>
+            </div>
+            {% endif %}
+            <div class="badge-item">
+                <span class="badge-label">Goal</span>
+                <span class="badge-value">{{ goal }}</span>
+            </div>
+            <div class="badge-item">
+                <span class="badge-label">Intensity</span>
+                <span class="badge-value">{{ intensity }}</span>
+            </div>
+        </div>
+
+        {% if updated_plan %}
+        <div class="plan-card">
+            <div class="plan-header">
+                <h2>Updated 7-Day Workout Plan</h2>
+                <span class="tag updated">Revised via Feedback</span>
+            </div>
+            {% if feedback %}
+            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 12px; font-style: italic;">
+                Reflected feedback: "{{ feedback }}"
+            </p>
+            {% endif %}
+            <pre>{{ updated_plan }}</pre>
+
+            <div class="nutrition-box">
+                <h3>🥗 Nutrition & Recovery Tip (Gemini Flash)</h3>
+                <p>{{ nutrition_tip }}</p>
+            </div>
+        </div>
+
+        <div class="plan-card" style="opacity: 0.85;">
+            <div class="plan-header">
+                <h2>Original Workout Plan</h2>
+                <span class="tag">Original Baseline</span>
+            </div>
+            <pre>{{ workout_plan }}</pre>
+        </div>
+        {% else %}
+        <div class="plan-card">
+            <div class="plan-header">
+                <h2>Personalized 7-Day Workout Plan</h2>
+                <span class="tag">Gemini Pro</span>
+            </div>
+            <pre>{{ workout_plan }}</pre>
+
+            <div class="nutrition-box">
+                <h3>🥗 Nutrition & Recovery Tip (Gemini Flash)</h3>
+                <p>{{ nutrition_tip }}</p>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="feedback-card">
+            <h3 style="margin-bottom: 8px;">Revise Your Workout Plan</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 16px;">
+                Submit feedback (e.g., "Add yoga on Day 3", "Include more cardio instead of leg press") to customize your plan.
+            </p>
+            <form action="/update-workout" method="POST">
+                <input type="hidden" name="user_id" value="{{ user_id }}">
+                <textarea name="feedback" placeholder="What changes would you like to make to your workout plan?" required></textarea>
+                <button type="submit" class="btn-update">Update Workout Plan with Gemini</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
